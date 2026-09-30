@@ -44,7 +44,7 @@ Official repository of EO-WM for probabilistic multispectral Earth Observation f
 
 ## 📰 News
 
-- **2026-09-26**: We will release the full EO-WM codebase and pretrained model weights in the coming weeks.
+- **2026-09-30**: We will release the full EO-WM codebase and pretrained model weights in the coming weeks.
 - **2026-09-26**: EO-WM is accepted by NeurIPS 2026 🎉.
 - **2026-06-26**: We release benchmark CSVs and Earthformer reference evaluation scripts.
 - **2026-06-26**: The paper is released on arXiv.
