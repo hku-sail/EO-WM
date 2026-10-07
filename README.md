@@ -1,6 +1,6 @@
 <div align="center">
 
-# EO-WM: A Physically Informed World Model for Probabilistic Earth Observation Forecasting
+# EO-WM: Toward Physically Informed World Modeling for Probabilistic Earth Observation Forecasting
 
 <p>
   <strong><a href="https://scholar.google.com/citations?user=6XibZaYAAAAJ&hl=en">Junwei Luo</a><sup>1,2*</sup></strong>
@@ -30,6 +30,9 @@
 <p>
   <a href="https://arxiv.org/abs/2606.27277"><img alt="arXiv: 2606.27277" src="https://img.shields.io/badge/arXiv-2606.27277-b31b1b.svg"></a>
 </p>
+<p>
+  <strong>Note:</strong> The current arXiv version reflects an earlier version of the manuscript and does not yet include the final camera-ready revisions. We will update the arXiv version to align with the camera-ready paper.
+</p>
 
 <p>
   <a href="https://arxiv.org/pdf/2606.27277">Preprint</a> ·
@@ -38,7 +41,7 @@
   <a href="#citation">Citation</a>
 </p>
 
-Official repository of EO-WM for probabilistic multispectral Earth Observation forecasting under weather forcing.
+Official repository of EO-WM, a weather-conditioned latent video diffusion model for probabilistic multispectral Earth Observation forecasting.
 
 </div>
 
@@ -55,9 +58,9 @@ Official repository of EO-WM for probabilistic multispectral Earth Observation f
   <img src="figures/Intro.png" width="95%" alt="EO-WM overview">
 </p>
 
-- **EO forecasting as world modeling**: future satellite observations are predicted from sparse EO context and weather forcing under partial observability.
-- **Physically informed conditioning**: EO-WM decomposes weather into climatology, anomaly, and cumulative stress signals.
-- **Weather-response evaluation**: two [EarthNet2021](https://www.earthnet.tech/resources/datasets/earthnet2021)-based benchmarks test vegetation degradation and paired response to changed weather forcing.
+- **Toward weather-driven EO world modeling**: we formulate partially observed EO forecasting as a weather-conditioned prediction problem, using sparse satellite observations and meteorological forcing to model plausible future observations.
+- **Physically motivated weather conditioning**: EO-WM organizes meteorological inputs into climatological baselines, weather anomalies, and cumulative stress signals to provide structured conditioning for future EO forecasting.
+- **Forecasting-oriented evaluation**: two [EarthNet2021](https://www.earthnet.tech/resources/datasets/earthnet2021)-based benchmarks evaluate forecasting under extreme summer conditions and matched-pair prediction divergence under differing weather conditions.
 
 ## Network Architecture
 
@@ -65,7 +68,7 @@ Official repository of EO-WM for probabilistic multispectral Earth Observation f
   <img src="figures/Pipeline.png" width="95%" alt="EO-WM network architecture">
 </p>
 
-EO-WM uses a physically informed latent video diffusion architecture for multispectral EO forecasting. An EO-specific VAE encodes sparse satellite observations into latent video tokens, while weather forcing is decomposed into climatological baseline, weather anomaly, and cumulative stress signals. The diffusion transformer routes these heterogeneous conditions through separate conditioning paths and repeatedly reinjects spatial context into the video-token stream, enabling probabilistic forecasts that remain responsive to future meteorological forcing.
+EO-WM is a weather-conditioned latent video diffusion model for probabilistic multispectral EO forecasting. An EO-specific VAE encodes sparse satellite observations into latent video tokens, while meteorological inputs are organized into climatological baselines, weather anomalies, and cumulative stress signals. The diffusion transformer processes these heterogeneous conditions through separate conditioning paths and periodically reinjects spatial context into the video-token stream to generate stochastic future EO observations conditioned on meteorological forcing.
 
 ## Benchmarks
 
