@@ -31,7 +31,7 @@
   <a href="https://arxiv.org/abs/2606.27277"><img alt="arXiv: 2606.27277" src="https://img.shields.io/badge/arXiv-2606.27277-b31b1b.svg"></a>
 </p>
 <p>
-  <strong>Note:</strong> The current arXiv version reflects an earlier version of the manuscript and does not yet include the final camera-ready revisions. We will update the arXiv version to align with the camera-ready paper.
+  <strong>Note:</strong> The current arXiv version is the preprint version. An updated version incorporating the camera-ready revisions will be posted on arXiv after the camera-ready manuscript is finalized.
 </p>
 
 <p>
