@@ -1,0 +1,30 @@
+model_type: eo_flux_vae
+
+model:
+  freeze_body: false
+
+  encoder:
+    _target_: eo_vae.models.Encoder
+    resolution: 256
+    in_channels: 3
+    ch: 128
+    ch_mult: [1, 2, 4, 4]
+    num_res_blocks: 2
+    z_channels: 32
+    use_dynamic_ops: true
+    dynamic_conv_kwargs:
+      num_layers: 4
+      wv_planes: 256
+
+  decoder:
+    _target_: eo_vae.models.Decoder
+    resolution: 256
+    out_ch: 3
+    ch: 128
+    ch_mult: [1, 2, 4, 4]
+    num_res_blocks: 2
+    z_channels: 32
+    use_dynamic_ops: true
+    dynamic_conv_kwargs:
+      num_layers: 4
+      wv_planes: 256

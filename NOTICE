@@ -1,0 +1,14 @@
+EO-WM builds on Open-Sora 2.0 (https://github.com/hpcaitech/Open-Sora)
+and includes a modified EO-VAE package (https://github.com/nilsleh/eo-vae).
+Original copyright and third-party notices are retained in LICENSE and
+the corresponding source files. Public author and maintainer attribution
+in upstream package metadata is retained.
+
+The code/ distribution adapts these projects for EarthNet2021 forecasting,
+weather conditioning, cumulative stress features, and benchmark evaluation.
+Release preparation also adjusts configuration loading, portable paths,
+environment installation, and command-line launchers.
+
+EarthNet2021 data and externally downloaded model weights remain subject
+to their respective original terms.
+

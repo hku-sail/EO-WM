@@ -1,0 +1,20 @@
+# Local datasets, model weights, and generated artifacts
+.env
+.env.*
+!.env.example
+**/.zeta/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.DS_Store
+code/weights/
+code/data/local/
+**/outputs/
+**/wandb/
+**/logs/
+**/cache/
+*.ckpt
+*.safetensors
+*.npz
+
